@@ -1,0 +1,27 @@
+{
+  "name": "splendid-surprises",
+  "version": "1.0.0",
+  "description": "Laser-cut engraved products e-commerce website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server .",
+    "build": "npm run build-css && npm run build-js",
+    "build-css": "postcss css/style.css -o css/dist/style.min.css --map",
+    "build-css:watch": "postcss css/style.css -o css/dist/style.min.css --watch",
+    "build-js": "webpack --mode=production",
+    "serve": "live-server ."
+  },
+  "keywords": ["laser-cutting", "ecommerce", "custom-gifts"],
+  "author": "Splendid Surprises",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^6.0.1",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.0",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^15.0.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0"
+  }
+}
